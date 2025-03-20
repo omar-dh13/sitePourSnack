@@ -1,7 +1,10 @@
-const age = 20;
+const myName = prompt("Nom d'utilisateur = ?")
+const salut = function saluer(myName) {
+    return 'Salut ' + myName
+}
 
-if (age >= 18) {
-    console.log('Vous êtes majeur.')
+if (!myName) {
+    console.log(salut('invité'))
 } else {
-    console.log('Accès non autorisé')
+    console.log(salut(myName));
 }
